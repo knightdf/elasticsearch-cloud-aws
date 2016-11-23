@@ -125,6 +125,8 @@ public class AwsEc2Service extends AbstractLifecycleComponent<AwsEc2Service> {
             String endpoint;
             if (region.equals("us-east-1") || region.equals("us-east")) {
                 endpoint = "ec2.us-east-1.amazonaws.com";
+            } else if (region.equals("us-east-2")) {
+                endpoint = "ec2.us-east-2.amazonaws.com";
             } else if (region.equals("us-west") || region.equals("us-west-1")) {
                 endpoint = "ec2.us-west-1.amazonaws.com";
             } else if (region.equals("us-west-2")) {
@@ -135,6 +137,8 @@ public class AwsEc2Service extends AbstractLifecycleComponent<AwsEc2Service> {
                 endpoint = "ec2.ap-southeast-2.amazonaws.com";
             } else if (region.equals("ap-northeast") || region.equals("ap-northeast-1")) {
                 endpoint = "ec2.ap-northeast-1.amazonaws.com";
+            } else if (region.equals("ap-northeast-2")) {
+                endpoint = "ec2.ap-northeast-2.amazonaws.com";
             } else if (region.equals("eu-west") || region.equals("eu-west-1")) {
                 endpoint = "ec2.eu-west-1.amazonaws.com";
             } else if (region.equals("eu-central") || region.equals("eu-central-1")) {
